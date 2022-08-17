@@ -14,7 +14,8 @@ class Migrator {
     }
     
     func updateSchema() {
-        let config = Realm.Configuration(schemaVersion:1) {
+        //make sure you always change the schemaVersion (bump it by one for each new migration you add
+        let config = Realm.Configuration(schemaVersion: 2) {
             migration, oldSchemaVersion in
             if oldSchemaVersion < 1 {
                 //add new fields
@@ -22,6 +23,16 @@ class Migrator {
                   newObject!["items"] = List<ShoppingListItem>()
                 }
             }
+            
+            if oldSchemaVersion < 2 {
+                //add new fields
+                migration.enumerateObjects(ofType: ShoppingListItem.className()) { _, newObject in
+                  newObject!["category"] = ""
+                }
+            }
+            
+            
+            
         }
         
         Realm.Configuration.defaultConfiguration = config
