@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		152903E828AD922200A64FF1 /* ShoppingItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152903E728AD922200A64FF1 /* ShoppingItemCell.swift */; };
+		152903EA28ADA78D00A64FF1 /* CategoryFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152903E928ADA78D00A64FF1 /* CategoryFilterView.swift */; };
 		155653B528AD1B8A002075EA /* RealmDBGroceryAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155653B428AD1B8A002075EA /* RealmDBGroceryAppApp.swift */; };
 		155653B728AD1B8A002075EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155653B628AD1B8A002075EA /* ContentView.swift */; };
 		155653B928AD1B8D002075EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155653B828AD1B8D002075EA /* Assets.xcassets */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		152903E728AD922200A64FF1 /* ShoppingItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingItemCell.swift; sourceTree = "<group>"; };
+		152903E928ADA78D00A64FF1 /* CategoryFilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryFilterView.swift; sourceTree = "<group>"; };
 		155653B128AD1B8A002075EA /* RealmDBGroceryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmDBGroceryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		155653B428AD1B8A002075EA /* RealmDBGroceryAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmDBGroceryAppApp.swift; sourceTree = "<group>"; };
 		155653B628AD1B8A002075EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +52,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		152903E628AD920B00A64FF1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				152903E728AD922200A64FF1 /* ShoppingItemCell.swift */,
+				152903E928ADA78D00A64FF1 /* CategoryFilterView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		155653A828AD1B8A002075EA = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +80,7 @@
 		155653B328AD1B8A002075EA /* RealmDBGroceryApp */ = {
 			isa = PBXGroup;
 			children = (
+				152903E628AD920B00A64FF1 /* Views */,
 				155653D128AD42B4002075EA /* Utils */,
 				155653CA28AD264C002075EA /* Models */,
 				155653C728AD22A1002075EA /* Screens */,
@@ -190,7 +204,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				152903E828AD922200A64FF1 /* ShoppingItemCell.swift in Sources */,
 				155653B728AD1B8A002075EA /* ContentView.swift in Sources */,
+				152903EA28ADA78D00A64FF1 /* CategoryFilterView.swift in Sources */,
 				155653D528AD4955002075EA /* ShoppingListItemsScreen.swift in Sources */,
 				155653CC28AD266F002075EA /* ShoppingList.swift in Sources */,
 				155653D328AD42D9002075EA /* Migrator.swift in Sources */,
